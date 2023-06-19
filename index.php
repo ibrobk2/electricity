@@ -23,7 +23,7 @@
 		<ul>
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Login</a></li>
-			<li><a href="#">Register</a></li>
+			<li><a href="register.php">Register</a></li>
 			<li><a href="#">Services</a></li>
 			<li><a href="#">Contact Us</a></li>
 			<li><a href="#">FAQs</a></li>
@@ -45,7 +45,7 @@
 
 		
 
-		<p>Don't have an account? <a href="#">Sign up here</a></p>
+		<p>Don't have an account? <a href="register.php">Sign up here</a></p>
 	</main>
 
 	<footer>
