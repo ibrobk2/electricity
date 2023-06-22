@@ -1,3 +1,12 @@
+
+<?php
+if(isset($_GET['exist'])){
+    echo "<script>
+        alert('Sorry User Already Exist!');
+    </script>";
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

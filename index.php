@@ -40,7 +40,7 @@
 			<input type="text" id="username" name="username" required><br><br>
 			<label for="password">Password:</label>
 			<input type="password" id="password" name="password" required><br><br>
-			<button type="submit">Log In</button>
+			<button type="submit" name="btn_login">Log In</button>
 		</form>
 
 		

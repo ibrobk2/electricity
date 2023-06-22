@@ -13,12 +13,42 @@ $email = $_POST['email'];
 $pass = $_POST['pass'];
 $phone = $_POST['phone'];
 
+$query = "SELECT * FROM customers WHERE username='$username' OR email='$email' OR phone='$phone'";
+$res = mysqli_query($conn, $query);
+
+if(mysqli_num_rows($res)>0){
+    header("Location: register.php?exist=yes");
+    exit();
+}
+
 $sql = "INSERT INTO customers (`full_name`, `username`, `email`, `password`, `phone`) VALUES ('$full_name', '$username', '$email', '$pass', '$phone')";
 $result = mysqli_query($conn, $sql);
 
 if($result){
     header("Location: index.php");
 }
+}
+
+//CUSTOMER LOGIN
+if(isset($_POST['btn_login'])){
+    //variables declaration
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $query = "SELECT * FROM customers WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($conn, $query);
+
+    if(mysqli_num_rows($result)>0){
+        session_start();
+        $_SESSION['username'] = $username;
+        header("Location: customer/");
+    }else{
+        echo "<script>
+            alert('Invalid username/password!');
+            window.location = 'index.php';
+        </script>";
+    }
+
 }
 
 ?>
