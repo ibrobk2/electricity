@@ -1,15 +1,22 @@
 <?php
 // session_start(); 
-include "../includes/connection.php";
-require_once "../includes/core.php";
 
-
-    $name = $user['full_name'];
-    $email = $user['email'];
-    $balance = $user['wallet'];
+// if(isset($_SESSION['phone'])){
+//     $phone = $_SESSION['phone'];
+        
+//     $sql = "SELECT * FROM `users` WHERE `phone`=$phone";
+//     $res = mysqli_query($conn, $sql);
+        
+//     $row = mysqli_fetch_assoc($res);
+//     $name = $row['name'];
+//     $email = $row['email'];
+//     $balance = $row['balance'];
     
 
-
+// }
+    $name = "Yusuf";
+    $email = "ibrobk@gmail.com";
+    $balance = 20;
 ?>
 
 <!DOCTYPE html>
@@ -111,11 +118,11 @@ require_once "../includes/core.php";
         let handler = PaystackPop.setup({
             key: 'pk_test_4ca55f702a3e739ed5f73b3a29407fa9f514aec7', // Replace with your public key
             email: document.getElementById("email-address").value,
-            amount: document.getElementById("amount").value,
+            amount: document.getElementById("amount").value*100,
             ref: 'BK'+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
             // label: "Optional string that replaces customer email"
             onClose: function(){
-                window.location="http://localhost/electricity/fund_wallet";
+                window.location="http://localhost/alhilal_vtu/pay/pay.php";
             alert('Transaction Cancelled.');
             },
             callback: function(response){

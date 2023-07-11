@@ -2,7 +2,7 @@
 session_start();
 // Include your server.php file with the database connection
 require_once '../includes/connection.php';
-// $username = $_SESSION['username'];
+$username = $_SESSION['username'];
 // Function to get the current user
 function getCurrentUser($username, $conn)
 {

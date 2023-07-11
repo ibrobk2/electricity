@@ -159,8 +159,8 @@ if(isset($_SESSION['username'])){
 				<li>
 					<i class='bx bxs-bank' ></i>
 					<span class="text">
-						<h3><a href="../fund_wallet/">CLICK HERE</a></h3>
-						<p>FUND WALLET</p>
+						<h3><a href="../fund_wallet/">FUND WALLET</a></h3>
+						<p></p>
 					</span>
 				</li>
 				<li>
@@ -176,15 +176,15 @@ if(isset($_SESSION['username'])){
 			<div class="table-data">
 				<div class="order">
 					<div class="head">
-						<h3>Recent Orders</h3>
+						<h3>Recent Transactions</h3>
 						<i class='bx bx-search' ></i>
 						<i class='bx bx-filter' ></i>
 					</div>
 					<table>
 						<thead>
 							<tr>
-								<th>User</th>
-								<th>Date Order</th>
+								<th>Transaction</th>
+								<th>Date </th>
 								<th>Status</th>
 							</tr>
 						</thead>

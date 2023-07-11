@@ -1,14 +1,14 @@
 /* Fund Wallet Page Styles */
 
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
     /* width: 50%; */
-  }
+  /* } */
   
-  .container {
+  /* .container {
     width: 100vw;
     max-width: 400px;
     margin: 50px auto;
@@ -59,8 +59,63 @@ body {
   
   button[type="submit"]:hover {
     background-color: #45a049;
+  } */
+   
+
+
+  /* Colors */
+  body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+  }
+
+  .container{
+      width: 100%;
+      /* max-width: 240px; */
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content:center;
   }
   
+  h1 {
+      color: #333;
+      text-align: center;
+  }
+  
+  .form-group label {
+      color: #555;
+      font-weight: bold;
+  }
+  
+  .form-group input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+  }
+  
+  .form-submit button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  
+  .form-submit button:hover {
+      background-color: #45a049;
+  }
+
+  button{
+      width:109%;
+      margin-top: 10px;
+  }
+
+
   p.error-message {
     color: red;
   }
