@@ -27,6 +27,14 @@ if(isset($_GET['exist'])){
         p a{
             color: gray;
         }
+        img#png{
+			position: absolute;
+			right: 30px;
+			width: 550px;
+			height: 550px;
+			/* border-radius: 150px; */
+			top: 20px;
+		}
 
        
     </style>
@@ -49,6 +57,7 @@ if(isset($_GET['exist'])){
             <p>Already Have an Account? Login <a href="index.php">Here</a></p>
         </form>
     </div>
+    <img src="images/app.png" alt="" id="png">
     <footer>
 		<p>&copy; <?php  echo date("Y"); ?>  Department of Computing and Artificial Intelligence, Federal University Dutsinma .</p>
 	</footer>

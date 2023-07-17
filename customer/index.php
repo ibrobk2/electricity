@@ -66,7 +66,7 @@ if(isset($_SESSION['username'])){
 				</a>
 			</li>
 			<li>
-				<a href="../forward_complain/">
+				<a href="../complain_form.php/">
 					<i class='bx bxs-message-dots' ></i>
 					<span class="text">Forward Complain</span>
 				</a>
@@ -166,7 +166,7 @@ if(isset($_SESSION['username'])){
 				<li>
 					<i class='bx bxs-dollar-circle' ></i>
 					<span class="text">
-						<h3>&#8358;<?=$row['wallet']; ?></h3>
+						<h3>&#8358;<?= number_format($row['wallet']); ?></h3>
 						<p>WALLET BALANCE</p>
 					</span>
 				</li>

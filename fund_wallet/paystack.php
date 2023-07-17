@@ -122,7 +122,7 @@
             ref: 'BK'+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
             // label: "Optional string that replaces customer email"
             onClose: function(){
-                window.location="http://localhost/alhilal_vtu/pay/pay.php";
+                window.location="http://localhost/electricity/fund_wallet";
             alert('Transaction Cancelled.');
             },
             callback: function(response){
