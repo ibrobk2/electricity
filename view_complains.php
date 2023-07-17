@@ -67,9 +67,9 @@
     </style>
 </head>
 <body>
-    <?php include("process.php");   ?>
+    <?php //include("process.php");   ?>
     <div class="container">
-    <h3><a href="./admin_dashboard.php" id="admin"><i class="las la-home"></i>Admin Dashboard</a></h3>
+    <h3><a href="./customer" id="customer"><i class="las la-home"></i>Admin Dashboard</a></h3>
     <a href="index.php" id="logout"><i class="las la-power-off"></i>Logout</a>
     <br><br><br>
         <h2>Users Complaints</h2>

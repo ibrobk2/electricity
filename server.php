@@ -20,10 +20,10 @@ function get_user(){
     $row = mysqli_fetch_assoc($result);
     $_SESSION['email'] = $row['email'];
     return $row;
-
-    }else{
-        echo "please login first";
     }
+    // }else{
+    //     echo "please login first";
+    // }
 }
 
 ?>

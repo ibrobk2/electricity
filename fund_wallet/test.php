@@ -98,7 +98,7 @@
             key: 'pk_test_4ca55f702a3e739ed5f73b3a29407fa9f514aec7', // Replace with your public key
             email: document.getElementById("email-address").value,
             amount: Number(document.getElementById("amount").value)*100,
-            ref: 'BK'+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+            ref: 'FUDMA'+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
             // label: "Optional string that replaces customer email"
             onClose: function(){
                 window.location="http://localhost/electricity/fund_wallet";

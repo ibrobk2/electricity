@@ -31,7 +31,7 @@ if($ref==""){
   } else {
     // echo $response;
     $result = json_decode($response);
-
+  
     if($result->data->status=="success"){
         $satus = $result->data->status;
         $reference = $result->data->reference;
@@ -42,8 +42,9 @@ if($ref==""){
         date_default_timezone_set("Africa/Lagos");
         $date_time = date('m/d/Y h:i:s a', time());
         $dep_amount = $result->data->amount;
-        $charge = 50;
-        $amount = $dep_amount-$charge;
+        // $charge = 50;
+        // $amount = $dep_amount-$charge;
+        $amount = $dep_amount/100;
         $type = "Deposit";
        
 
@@ -62,7 +63,7 @@ if($ref==""){
         $stmt->execute();
 
         if($stmt){
-            header("Location: success.php");
+            header("Location: success.php?amount=".$amount."&ref=".$reference);
         }
     }else{
         header("Location: error.html");

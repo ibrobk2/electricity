@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../server.php";
+include "server.php";
 
 
 
@@ -25,7 +25,6 @@ if(isset($_GET['amount'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Receipt</title>
    <style>
-   
     .container{
         width: 500px;
         text-align:center;
@@ -40,9 +39,9 @@ if(isset($_GET['amount'])){
 </head>
 <body>
     <div class="container">
-        <img src="../images/kedco.png" alt="" width="152" height="92">
+        <img src="images/kedco.png" alt="" width="152" height="92">
         <h1 style="font-size:20px">KEDCO NIG. LTD</h1>
-        <p>No. 8 IBB Way, Katsina Branch.</p>
+        <p>No. 8 Yahaya Madaki Way, Katsina Branch.</p>
         <h2 style="font-size:18px"><u>Payment Receipt</u></h2>
         <p>Your Wallet was successfully funded.</p>
         <table>
@@ -54,7 +53,7 @@ if(isset($_GET['amount'])){
                 <td>&#8358;<?=$amount;?></td>
                 <td><?=date('d/m/Y g:ia'); ?></td>
             </tr>
-            <b>Transaction Id: <?php echo $reference;?></b>
+            Transaction Id: <?php echo $reference;?>
 
 
         </table><br>
@@ -62,7 +61,7 @@ if(isset($_GET['amount'])){
 
 
         <footer>
-            <a href="../customer/"><button id="rd">Return to Dashboard</button></a>
+            <a href="user_dashboard.php"><button id="rd">Return to Dashboard</button></a>
             <button style="float: right" onclick="printer();" id="prt">Print</button>
         </footer>
 
